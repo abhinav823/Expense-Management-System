@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  height: 100vh;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  font-weight: bold;
+  
+
+}
+
+.register-form {
+  border: 1px solid gray;
+  padding: 40px;
+}
+
+/* transaction page */
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  box-shadow: 0 0 3px gray;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* //to add border around the filters section we can use border property */
+  border: 1px grey;
+
+  /* //to move filters closer to each other we can use margin property */
+  margin: 20px 100px;
+}
+
+/* antd icons */
+
+.switch-icons {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.anticon svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active-icon {
+  color: black;
+}
+
+.inactive-icon {
+  color: gray;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000 !important;
+  font-size: medium;
+}
+
+/* //make footer sticky */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  color: black;
+  text-align: center;
+  padding: 1px 0px ;
+}
+
+.navbar {
+  background-color: #6f4e3742 !important;
+  padding: 9px 10px;
+}
+
+
+.navbar .navbar-brand {
+  color: black !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+  .navbar .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+
+ @media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+
+  .switch-icons {
+    margin: 10px 0px;
+  }
+}
+
+ @media (max-width: 576px) {
+  .filters {
+    margin: 20px 0px;
+  } 
+ }
